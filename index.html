@@ -1,146 +1,310 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alejandro Romo Limon | Computer Science Student</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    html, body, h1, h2, h3, h4, h5, h6 {
+      font-family: "Roboto", sans-serif;
+    }
+
+    body {
+      background: #eef2f7;
+      color: #22303c;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0f766e, #155e75);
+      color: white;
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .profile-photo {
+      width: 100%;
+      max-height: 320px;
+      object-fit: cover;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #d7f3ef, #b3e5fc);
+      display: block;
+    }
+
+    .section-title {
+      color: #155e75;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 6px 12px;
+      margin: 5px 6px 0 0;
+      border-radius: 999px;
+      background: #e6fffb;
+      color: #115e59;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .accent-line {
+      width: 70px;
+      height: 4px;
+      background: #14b8a6;
+      border-radius: 999px;
+      margin: 8px 0 18px;
+    }
+
+    .entry-title {
+      font-weight: 700;
+      color: #1f2937;
+    }
+
+    .entry-meta {
+      color: #0f766e;
+      font-weight: 500;
+      margin-top: 4px;
+    }
+
+    .contact-link {
+      color: white;
+      text-decoration: none;
+    }
+
+    .contact-link:hover {
+      text-decoration: underline;
+    }
+
+    .card-rounded {
+      border-radius: 18px;
+    }
+
+    .project-card {
+      border-left: 5px solid #14b8a6;
+      border-radius: 14px;
+    }
+
+    .footer-note {
+      font-size: 13px;
+      color: #5b6773;
+    }
+
+    ul.clean-list {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+
+    ul.clean-list li {
+      margin-bottom: 8px;
+    }
+  </style>
 </head>
-<body class="w3-light-grey">
-
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="/w3images/avatar_hat.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2>Jane Doe</h2>
-          </div>
+<body>
+  <div class="w3-content w3-padding-24" style="max-width: 1250px;">
+    <div class="hero w3-margin-bottom">
+      <div class="w3-row-padding">
+        <div class="w3-third w3-margin-bottom">
+          <img src="images/profile.jpg" alt="Alejandro Romo Limon" class="profile-photo" />
         </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Designer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>London, UK</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>ex@mail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p>
-          <hr>
-
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>Adobe Photoshop</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-          </div>
-          <p>Photography</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
-            </div>
-          </div>
-          <p>Illustrator</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-          </div>
-          <p>Media</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-          </div>
-          <br>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p>English</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-          </div>
-          <p>Spanish</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
-          </div>
-          <p>German</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
-          </div>
-          <br>
+        <div class="w3-twothird">
+          <h1 class="w3-margin-bottom">Alejandro Romo Limon</h1>
+          <h4 class="w3-opacity-min" style="color: #d9fffb;">Computer Science Student | Machine Learning Focus | Accessibility & Computer Vision</h4>
+          <p class="w3-large" style="max-width: 780px;">
+            I am a Computer Science student at California State University, Long Beach, interested in software engineering,
+            computer vision, and accessibility-focused technology. My work has included undergraduate research with YOLO,
+            collaborative software development, and leadership through tutoring, mentoring, and public speaking.
+          </p>
+          <p>
+            <i class="fa fa-map-marker fa-fw w3-margin-right"></i>Norwalk, CA &nbsp;&nbsp;
+            <i class="fa fa-envelope fa-fw w3-margin-right"></i><a class="contact-link" href="mailto:alejandroromolimon2@gmail.com">alejandroromolimon2@gmail.com</a> &nbsp;&nbsp;
+            <i class="fa fa-phone fa-fw w3-margin-right"></i><a class="contact-link" href="tel:+15624182954">(562) 418-2954</a>
+          </p>
+          <p>
+            <i class="fa fa-linkedin fa-fw w3-margin-right"></i><a class="contact-link" href="#" target="_blank">LinkedIn</a>
+            &nbsp;&nbsp;
+            <i class="fa fa-github fa-fw w3-margin-right"></i><a class="contact-link" href="#" target="_blank">GitHub</a>
+            &nbsp;&nbsp;
+            <i class="fa fa-file-text-o fa-fw w3-margin-right"></i><a class="contact-link" href="#" target="_blank">Resume PDF</a>
+          </p>
         </div>
-      </div><br>
-
-    <!-- End Left Column -->
+      </div>
     </div>
 
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <hr>
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <div class="w3-white w3-card card-rounded w3-padding-24 w3-margin-bottom">
+          <h3 class="section-title">About</h3>
+          <div class="accent-line"></div>
+          <p>
+            Freshman-to-sophomore Computer Science student building a strong foundation in Python, data structures,
+            collaborative development, and applied machine learning. I am especially interested in roles involving
+            software engineering, computer vision, and real-world problem solving.
+          </p>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <hr>
+
+        <div class="w3-white w3-card card-rounded w3-padding-24 w3-margin-bottom">
+          <h3 class="section-title">Skills</h3>
+          <div class="accent-line"></div>
+          <p><strong>Languages</strong></p>
+          <div>
+            <span class="pill">Python</span>
+            <span class="pill">Java</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">C++</span>
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
+          </div>
+          <p class="w3-margin-top"><strong>Tools</strong></p>
+          <div>
+            <span class="pill">Git & GitHub</span>
+            <span class="pill">Linux</span>
+            <span class="pill">VS Code</span>
+            <span class="pill">YOLO</span>
+            <span class="pill">Google Workspace</span>
+            <span class="pill">Microsoft Office</span>
+          </div>
+          <p class="w3-margin-top"><strong>Strengths</strong></p>
+          <div>
+            <span class="pill">OOP</span>
+            <span class="pill">Data Structures</span>
+            <span class="pill">Accessibility Design</span>
+            <span class="pill">Team Collaboration</span>
+            <span class="pill">Public Speaking</span>
+          </div>
+          <p class="w3-margin-top"><strong>Spoken Languages</strong></p>
+          <div>
+            <span class="pill">English</span>
+            <span class="pill">Spanish</span>
+          </div>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+
+        <div class="w3-white w3-card card-rounded w3-padding-24 w3-margin-bottom">
+          <h3 class="section-title">Education</h3>
+          <div class="accent-line"></div>
+          <p class="entry-title">California State University, Long Beach</p>
+          <p class="entry-meta">B.S. in Computer Science, Machine Learning Emphasis | Expected May 2029</p>
+          <p>GPA: 3.8 | Major GPA: 4.0</p>
+          <p><strong>Relevant Coursework:</strong> Data Structures, Discrete Structures, Calculus I-II, Statistics, Physics</p>
+        </div>
+
+        <div class="w3-white w3-card card-rounded w3-padding-24">
+          <h3 class="section-title">Awards</h3>
+          <div class="accent-line"></div>
+          <ul class="clean-list">
+            <li>1st and 3rd Place, MEP Spanish Debate State Competition (2024-2025)</li>
+            <li>Coaches Leadership Award (2024, 2025)</li>
+            <li>Seal of Biliteracy (2024)</li>
+            <li>State Seal of Civic Engagement (2025)</li>
+            <li>Highest Honors (2025)</li>
+          </ul>
         </div>
       </div>
 
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-          <p>Web Development! All I need to know in one place</p>
-          <hr>
+      <div class="w3-twothird">
+        <div class="w3-white w3-card card-rounded w3-padding-24 w3-margin-bottom">
+          <h2 class="section-title"><i class="fa fa-code fa-fw w3-margin-right"></i>Technical Experience</h2>
+          <div class="accent-line"></div>
+
+          <div class="w3-margin-bottom">
+            <div class="entry-title">Undergraduate Researcher — Accessibility & Computer Vision</div>
+            <div class="entry-meta">August 2022 - June 2025</div>
+            <ul class="clean-list">
+              <li>Built an offline computer vision application using YOLO to detect moving vehicles for visually impaired users in low-connectivity environments.</li>
+              <li>Designed accessibility-first workflows compatible with screen readers, including VoiceOver and TalkBack.</li>
+              <li>Collaborated with a blind user and family members to gather feedback and define evaluation criteria.</li>
+              <li>Tested YOLOv11n for object and video detection with a focus on efficiency and reliability on mobile devices.</li>
+              <li>Committed 6+ hours weekly to research, development, and asynchronous project work.</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="entry-title">Software Engineering Participant — Startup Incubator (ACM @ CSULB)</div>
+            <div class="entry-meta">Sep 2024 - Nov 2024</div>
+            <ul class="clean-list">
+              <li>Supported debugging, testing, planning, and Git-based collaboration in a shared development environment.</li>
+              <li>Worked alongside upper-division students and mentors, strengthening communication, teamwork, and software development workflow knowledge.</li>
+              <li>Participated in weekly progress meetings and project presentations under tight deadlines.</li>
+            </ul>
+          </div>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>London Business School</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
-          <p>Master Degree</p>
-          <hr>
+
+        <div class="w3-white w3-card card-rounded w3-padding-24 w3-margin-bottom">
+          <h2 class="section-title"><i class="fa fa-laptop fa-fw w3-margin-right"></i>Projects</h2>
+          <div class="accent-line"></div>
+
+          <div class="w3-panel w3-pale-grey project-card w3-padding-16 w3-margin-top">
+            <div class="entry-title">APHEX Dining Platform</div>
+            <div class="entry-meta">React, Tailwind CSS, Node.js, Vite, Vercel | Sep 2024 - Nov 2024</div>
+            <p>
+              Helped build a campus dining platform that lets students view vendor schedules, menus, pricing, and dietary information.
+              Contributed to testing, collaboration, and API-based development in a full-stack team environment, and presented the project
+              through ACM Project Starbound as part of a student incubator focused on demo-ready products.
+            </p>
+          </div>
+
+          <div class="w3-panel w3-pale-grey project-card w3-padding-16">
+            <div class="entry-title">Civic Engagement Educational Website (Project Lead)</div>
+            <div class="entry-meta">HTML, CSS, JavaScript | Sep 2024 - Jan 2025</div>
+            <p>
+              Led a team of 3 in designing and developing an educational website for teachers and elementary students.
+              Built front-end functionality, helped shape project direction based on classroom needs, and presented the final product to faculty.
+            </p>
+          </div>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>School of Coding</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
-          <p>Bachelor Degree</p><br>
+
+        <div class="w3-white w3-card card-rounded w3-padding-24 w3-margin-bottom">
+          <h2 class="section-title"><i class="fa fa-users fa-fw w3-margin-right"></i>Leadership & Community</h2>
+          <div class="accent-line"></div>
+
+          <div class="w3-margin-bottom">
+            <div class="entry-title">Captain, Academic Tutor — Norwalk High School</div>
+            <div class="entry-meta">August 2022 - June 2025</div>
+            <ul class="clean-list">
+              <li>Tutored 35+ students in math, science, and foundational computing concepts through one-on-one support.</li>
+              <li>Encouraged peers to build confidence in challenging subjects by breaking down concepts clearly and patiently.</li>
+              <li>Led teammates by organizing communication, promoting accountability, and supporting peers through academic and athletic challenges.</li>
+            </ul>
+          </div>
+
+          <div class="w3-margin-bottom">
+            <div class="entry-title">Teacher Assistant Volunteer — Migrant Education Program</div>
+            <div class="entry-meta">Jun 2024 - Jun 2025</div>
+            <ul class="clean-list">
+              <li>Supported elementary students in math, language, and critical thinking through one-on-one and small-group instruction.</li>
+              <li>Contributed 200+ volunteer hours across summer and Saturday programming while helping staff coordinate events and family support.</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="entry-title">Spanish Speech & Debate — Migrant Education Program</div>
+            <div class="entry-meta">Jan 2024 - May 2025</div>
+            <ul class="clean-list">
+              <li>Conducted in-depth research and delivered Spanish-language arguments at the regional and state level.</li>
+              <li>Strengthened public speaking, rebuttal, and analytical communication skills through 200+ hours of preparation and competition.</li>
+              <li>Earned state-level recognition in competition.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="w3-white w3-card card-rounded w3-padding-24">
+          <h2 class="section-title"><i class="fa fa-bullseye fa-fw w3-margin-right"></i>What I’m Looking For</h2>
+          <div class="accent-line"></div>
+          <p>
+            I am looking for opportunities in software engineering, computer vision, machine learning, and accessibility-focused development
+            where I can keep building technical depth, contribute to real products, and grow through hands-on experience.
+          </p>
+          <p class="footer-note">
+            Replace the placeholder image path and links above with your real profile image, LinkedIn URL, GitHub URL, and resume PDF path.
+          </p>
         </div>
       </div>
-
-    <!-- End Right Column -->
     </div>
-    
-  <!-- End Grid -->
   </div>
-  
-  <!-- End Page Container -->
-</div>
-
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
-
 </body>
 </html>
